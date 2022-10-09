@@ -7,13 +7,24 @@
   *OBJECTIVES*
  - [x] Add the Users to the Proper Groups
  - [x] Use the IAM Sign-In Link to Sign In as a User
+ 
+ ### ## Create and Assume Roles in AWS (Lab005/guide-005A)
+  *OBJECTIVES*
+ - [x] Create the Correct S3 Restricted Policies and Roles
+ - [x] Configure IAM So the dev3 User Can Assume the Role
     
 ## Amazon Simple Storage Service (Amazon S3)
 
 ### Creating a Basic Amazon S3 Lifecycle Policy Configuring Amazon S3 (Lab006)
   *OBJECTIVES*
-   - [x] Create an S3 Bucket and Upload an Object
+   - [x] Create S3 Bucket
    - [x] Create a Lifecycle Policy
+
+### Create a Static Website Using Amazon S3 (Lab007A)
+  *OBJECTIVES*
+   - [x] Create an S3 Bucket and Upload an Object
+   - [x] Enable Static Website Hosting
+   - [x] Apply Bucket Policy
 
 ### Configuring Amazon S3 Buckets to Host a Static Website with a Custom Domain (Lab007)
   *OBJECTIVES*
@@ -28,8 +39,8 @@
 
  ### Set up Cross-Region S3 Bucket Replication
   *OBJECTIVES*
-   - [ ] Placeholder
-   - [ ] Placeholder
+   - [x] Create an S3 Bucket and Enable Replication
+   - [x] Test Replication and Observe Results
 
 
 ## Amazon Virtual Private Cloud (VPC)
