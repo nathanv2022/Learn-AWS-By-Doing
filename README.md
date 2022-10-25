@@ -1,6 +1,18 @@
 ﻿# Learn AWS By Doing
- Learn AWS by Doing hands-on labs & projects
+ This is my personal project for Learning AWS by Doing hands-on labs & projects. 
+ The labs & projects in this repo inspired by ACloudGuru (ACG) via courses designed for AWS Associate levels
+ 
+ Certificate of Completion
+ - AWS Certified Cloud Practitioner | AWS
+ - ACG_AWS Certified Solutions Architect - Associate (SAA-C02)
+ - ACG_Designing Resilient Architectures for Associate AWS Solutions Architects
+ - ACG_Networking and Compute for Associate AWS Solutions Architects
 
+
+Note:
+ - [x] Task Done
+ - [ ] Task Not Done
+ 
 ## Identity and Access Management (IAM)
   
 ### Introduction to AWS Identity and Access Management (IAM) (Lab005)
@@ -58,11 +70,34 @@ We will create two S3 buckets and verify public versus non-public access to the 
    - [x] Create a Public and Private Amazon S3 Bucket
    - [x] Enable Versioning on the Public Bucket and Validate Access to Different Versions of Files with the Same Name
 
- ### Set up Cross-Region S3 Bucket Replication (Lab009)
+### Set up Cross-Region S3 Bucket Replication (Lab009)
+Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. In this lab, we explore how to use Amazon S3 to automatically replicate any object stored in our S3 bucket to a different region on the other side of the country. This ensures our files remain accessible in any extreme scenario where data loss could possibly occur. By the end of this lab, the user will understand how to create S3 buckets and enable automatic replication to back up files in a different physical location.
+
   *OBJECTIVES*
    - [x] Create an S3 Bucket and Enable Replication
    - [x] Test Replication and Observe Results
 
+### Setting Up AWS CloudFront as an HTTPS Endpoint for S3
+In this hands-on lab we'll be setting up a CloudFront distribution in front of an S3 bucket website and securing it via HTTPS provided by CloudFront. AWS CloudFront is a versatile caching service (CDN) that helps with lowering latency when accessing objects over the internet. Additionally, it can act as an HTTPS termination point for your cached website — thus, providing a secure way of distributing your content over the internet.
+
+  *OBJECTIVES*
+   - [ ] Upload Content to S3 Bucket
+   - [ ] Create CloudFront OAI
+   - [ ] Modify S3 Policy File in Directory and Execute It Against S3 Bucket
+   - [ ] Create CloudFront Distribution
+   - [ ] Get and Update the CloudFront Distribution Config
+   - [ ] Update CloudFront Distribution with the Modified `dist-config.json` File
+   - [ ] Test and Verify
+
+### Querying Data in Amazon S3 with Amazon Athena
+This hands-on lab allows you to practice analyzing data stored in S3 using SQL queries in AWS Athena. Additionally, we use AWS Glue to reduce storage costs and increase the efficiency of query scans.
+
+We'll walk through an interactive query service which helps to analyze data for various AWS services, including CloudFront access logs. You create a table, load the data partitions, and query the data in the table using SQL.
+
+  *OBJECTIVES*
+   - [ ] Create a Table from S3 Bucket Metadata
+   - [ ] Add Partition Metadata
+   - [ ] Query the Total Bytes Served in a Date Range
 
 ## Amazon Virtual Private Cloud (VPC)
 
@@ -91,10 +126,10 @@ These components are the foundation of highly available/fault tolerant networkin
 The bare-bones architecture we built in this lab is a design you will frequently see when working in AWS.
 
   *OBJECTIVES*
-   - [ ] Create a VPC
-   - [ ] Create six (6) Subnets
-   - [ ] Create a NAT Gateway
-   - [ ] Create three (3) NACLs and associate them with subnets
+   - [x] Create a VPC
+   - [x] Create six (6) Subnets
+   - [x] Create a NAT Gateway
+   - [x] Create three (3) NACLs and associate them with subnets
 
 ### Troubleshooting AWS Network Connectivity: Security Groups and NACLs
 Troubleshooting basic network connectivity issues is an important skill. This troubleshooting scenario is an opportunity to assess your skills in this area. In this lab scenario, a junior administrator has deployed a VPC and instances, but there are a few things wrong. `Instance3` is not able to connect to the internet and the junior admin can't determine why. Being a senior administrator, it's your responsibility to troubleshoot the issue and ensure the instance has connectivity to the internet, so that you can ping and log in to the instance using SSH.
